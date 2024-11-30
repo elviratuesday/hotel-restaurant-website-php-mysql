@@ -1,0 +1,326 @@
+/*******************************************************************
+1. Universal styles (typography, etc.)
+2. Header & Nav styles
+3. Main Body Content
+4. Widgets
+5. Footer Content
+6. Viewport
+*******************************************************************/
+
+/****************************
+*****************************
+COLOR GUIDE:
+
+# Dark Grey (text): #444
+# Black (nav background): #111
+# Red (links): #ce1b28
+# White (header title): #fcfcfc
+# Orange (table): #e68523
+# Light orange (table): #ffeedd
+# Light blue (table): #f4faff
+*****************************
+***************************/
+
+/****************************
+*****************************
+1. Universal Styles
+*****************************
+****************************/
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #444;
+    background: white;
+}
+h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+a {
+    color: #ce1b28;
+    font-size: 1.2rem;
+}
+p {margin-bottom: 2rem;}
+button:hover{background-color: red;}
+
+/****************************
+*****************************
+2. Header & Nav Styles
+*****************************
+****************************/
+
+.hotelHeader {width: 100%;}
+.hotelHeader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/hotelHeader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+}
+.hotelHeader-container h1 {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+nav {text-align: center;}
+.mainNav {
+    background-color: #111;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+}
+ul {
+    margin: 0 0;
+}
+li {display: inline;}
+.active {text-decoration: underline;}
+.navLink {
+    color: #cecece;
+    text-decoration: none;
+}
+.subNavLink {
+    color: white;
+    background: red;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0.5%;
+    border-radius: 4px;
+}
+#subNav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+
+/****************************
+*****************************
+3. Main Body Content
+*****************************
+****************************/
+  
+main {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+section:not(#bevestiging, .foodTab) {padding: 5%;}
+section {
+    margin-bottom: 1rem;
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+    border-radius: 5px; 
+    border: inset 1px rgba(0, 0, 0, 0.2);
+}
+#tabs {text-align: center;}
+#tabs a{
+    color:#444;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 600;
+}
+.foodTab {
+    border: none;
+    padding: 1%;
+}
+#tabs > ul > li:hover{cursor:pointer;}
+#tabs > ul > .active{
+    background: #e68523;
+    padding: 8px;
+    margin: 0.5%;
+    border-radius: 4px;
+}
+table {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {background-color: #e68523;}
+td {
+    background-color: #f4faff;
+    text-align: center;
+}
+td, th {
+    width: 25%;
+    padding: 0.5rem;
+}
+caption {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/****************************
+*****************************
+4. Widgets
+*****************************
+****************************/
+
+#kamer-section {padding: 1%;}
+.kamerFoto{
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    display: block;
+}
+.kamer-button {
+    color: white;
+    text-transform: uppercase;
+    background: #555;
+    padding: 20px 60px;
+    border-color: white;
+    text-align: center;
+    width: 100%;
+}
+#bevestiging {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#annuleerBtn {
+    margin-top: 20px;
+    width: 100%;
+}
+.kamer-container { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} 
+.kamer-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 30%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.kamer-container article p {height: 70px;}
+input:valid {border: 1px solid green;}
+input:invalid {border:1px solid red;}
+fieldset {border: white;}
+input:not([type="radio"],[type="submit"]){
+    display: block;
+    width: 95%;
+    padding: 2%;
+    border-radius: 4px;
+}
+input[type="submit"] {width: 20em;}
+#postcode, #aantalkamers, #vertrekdatum, #aankomstdatum {max-width: 10em;}
+input[type="submit"]:hover{background-color: red;}
+.bevestigingImage {
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+}
+#bevestiging p, h3 {text-align: center;}
+
+/****************************
+*****************************
+5. Footer Content
+*****************************
+****************************/
+
+#locatie {
+    padding: 5%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.contact, .locatie {
+    float: left;
+    overflow: hidden;
+    width: 49.4%;
+    height: 300px;
+    margin-right: 0.5%;
+ }  
+
+/****************************
+*****************************
+6. Viewport
+*****************************
+****************************/
+
+@media (max-width: 400px) {
+    #tabs > ul > .active{
+      padding: 1px;
+      background: white;
+    }
+    #tabs > ul {text-align: center;font-size: medium;}
+    td:first-child {
+        background-color:#e68523;
+        color: white;
+    } 
+    .navLink, a {font-size: small;}
+    #locatie a {font-size: 1.2rem;}    
+    .hotelHeader-container {height:300px;}
+    .hotelHeader-container h1 {font-size: medium;}
+    .contact{width: 100%;}
+    .locatie {width: 100%;}
+    .kamer-container { display:block;} 
+        caption {
+        font-size: 1rem;
+        background: #e68523;
+        padding: 3%;
+    }
+    table, tr, td {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+        border: none;
+    }
+    thead {display: none;}
+    td:nth-child(1)::before {
+        content: "Gerecht: ";
+        font-weight: 600;
+    }
+    td:nth-child(2)::before {
+        content: "Ingrediënten: ";
+        font-weight: 600;
+    }
+    td:nth-child(3)::before {
+        content: "Prijs: ";
+        font-weight: 600;
+    }
+    td:nth-child(4)::before {
+        content: "Allergie informatie: ";
+        font-weight: 600;
+    }
+    tbody {padding: 1rem;}
+}
+@media (min-width: 401px) {
+    tbody tr:nth-child(even) td {
+        background-color: #ffeedd;
+    }
+    #tabs > ul > .active{ text-decoration: none;}
+    #tabs a{padding: 15px;}
+    fieldset {
+        width: 45%;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        padding: 3%
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="submit"] {width: 20em;}
+    #annuleerBtn {
+        width: 20em;
+        margin-bottom: 20px;}
+    td {height: 70px;}
+}

@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&display=swap);
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #444444;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Nunito';
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+a {
+    color: #ce1b28;
+    font-size: 1rem;
+    width: 2.5%;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+    padding: 5%;
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+    border: inset 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+/* Header styling */
+header {
+    position: relative;
+    top: -17px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #3d9ce9;
+    text-align: center;
+    color: white;
+}
+
+.attributen {
+    text-align: center;
+}
+
+header h1 {
+    position: relative;
+    top: 12px;
+}
+
+nav {
+    position: relative;
+    text-align: center;
+    top: 65px;
+    width: 100%;
+    font-size: 17px;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.action {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.actions {
+    position: relative;
+    top: 35px;
+    width: 25%;
+}
+
+#actions {
+    position: relative;
+    top: 71px;
+}
+
+/* Footer styling */
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #3d9ce9;
+}
+
+/* Tabel styling */
+#roomImg {
+    height: auto;
+    width: 280px;
+}
+
+table {
+    width: 100%;
+    border: inset 1px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    margin: 2% 0;
+    position: relative;
+    top: 15px;
+}
+
+th,
+td {
+    text-align: center;
+    border-bottom: inset 1px rgba(0, 0, 0, 0.2);
+    border-right: inset 1px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    line-height: 1;
+    vertical-align: center;
+    font-size: 15px;
+
+}
+
+td::before {
+    font-weight: bold;
+}
+
+
+table thead,
+table tr th {
+    background: #e68523;
+}
+
+tbody td:nth-child(even) {
+    background: #e6842315;
+}
+
+tbody td:nth-child(odd) {
+    background: #0076b50d;
+}
+
+.id,
+#id {
+    width: 2%;
+    text-align: center;
+}
+
+.type,
+#type {
+    text-align: left;
+    width: 9%;
+}
+
+.img,
+#img {
+    width: 10%;
+}
+
+.kDesc,
+#kDesc {
+    width: 14%;
+    text-align: left;
+}
+
+.lDesc,
+#lDesc {
+    width: 57%;
+    text-align: left;
+}
+
+/* 
+.action {
+    width: 2.5%;
+    border: none;
+    cursor: pointer;
+} */
+
+#action {
+    border-right: none;
+    background: #e6842315;
+}
+
+/* Form styling */
+form {
+    text-align: center;
+}
+
+#submit {
+    position: relative;
+    left: 21px;
+    height: 40px;
+    width: 39%;
+}
+
+textarea:valid,
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+textarea,
+input {
+    width: 40%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+
+}
+
+/* Errors  */
+
+.errors {
+    display: inline-block;
+    border: 2px solid red;
+    color: red;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+.errors li {
+    list-style: circle;
+}
+
+.errors ul {
+    margin-bottom: 0;
+    padding-left: 1em;
+}
